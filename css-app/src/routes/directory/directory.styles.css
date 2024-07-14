@@ -4,6 +4,8 @@
   height: 528px;
   padding: 10px;
   background: url(../../assets/freedom.jpg);
+  margin-top: 38px;
+  position: relative;
 }
 .section-title {
   color: #2ddf5c;
@@ -12,7 +14,13 @@
 #product-overview h1 {
   color: white;
   font-family: "Anton", sans-serif;
+  position: absolute;
+  bottom: 10%;
+  left: 2%;
+  font-size: 25px;
 }
 .card-container {
+  width: 80%;
+  margin: auto;
   text-align: center;
 }

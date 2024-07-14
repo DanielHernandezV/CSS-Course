@@ -1,0 +1,23 @@
+.main-footer {
+  background: rgb(13, 40, 13);
+  padding: 3px;
+}
+.footer-list {
+  list-style: none;
+  text-align: right;
+  margin-right: 30px;
+}
+.footer-feature {
+  display: inline-block;
+  margin: 0px 16px;
+  color: white;
+}
+
+.footer-feature > a {
+  color: white;
+  text-decoration: none;
+}
+.footer-feature > a:hover,
+.footer-feature > a:active {
+  color: antiquewhite;
+}

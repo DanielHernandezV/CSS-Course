@@ -1,5 +1,7 @@
 import "./directory.styles.css";
 import PlanCard from "../../component/plan-card/plan-card.component";
+import KeyFeatures from "../../component/key-features/key-features.component";
+
 const cards = [
   {
     type: "Free",
@@ -40,19 +42,22 @@ const cards = [
 ];
 const Directory = () => {
   return (
-    <main>
-      <section id="product-overview">
-        <h1>Get the freedom you deserve.</h1>
-      </section>
-      <section id="plans">
-        <h1 className="section-title">Choose Your Plan</h1>
-        <div className="card-container">
-          {cards.map((card) => (
-            <PlanCard key={card.type} card={card} />
-          ))}
-        </div>
-      </section>
-    </main>
+    <>
+      <main>
+        <section id="product-overview">
+          <h1>Get the freedom you deserve.</h1>
+        </section>
+        <section id="plans">
+          <h1 className="section-title">Choose Your Plan</h1>
+          <div className="card-container">
+            {cards.map((card) => (
+              <PlanCard key={card.type} card={card} />
+            ))}
+          </div>
+        </section>
+        <KeyFeatures />
+      </main>
+    </>
   );
 };
 
