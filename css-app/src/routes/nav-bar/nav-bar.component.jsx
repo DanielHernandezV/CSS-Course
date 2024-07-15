@@ -6,6 +6,7 @@ import Footer from "../../component/footer/footer.component";
 const NavBar = () => {
   return (
     <>
+      <div className="backdrop"></div>
       <header className="main-header">
         <div>
           <Link to="/" className="main-header__brand">

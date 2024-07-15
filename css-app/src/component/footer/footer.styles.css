@@ -1,15 +1,15 @@
 .main-footer {
   background: rgb(13, 40, 13);
-  padding: 3px;
+  padding: 0.2rem;
 }
 .footer-list {
   list-style: none;
   text-align: right;
-  margin-right: 30px;
+  margin-right: 1.9rem;
 }
 .footer-feature {
   display: inline-block;
-  margin: 0px 16px;
+  margin: 0px 1rem;
   color: white;
 }
 

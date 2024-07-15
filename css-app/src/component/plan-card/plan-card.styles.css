@@ -1,9 +1,9 @@
 .plan {
   display: inline-block;
-  padding: 16px;
+  padding: 1rem;
   background: rgb(172, 229, 172);
   text-align: center;
-  margin: 8px;
+  margin: 0.5rem;
   width: 350px;
   vertical-align: middle;
 }
@@ -20,7 +20,7 @@
   color: white;
 }
 .plan-anotation {
-  padding: 5px;
+  padding: 0.3rem;
   background-color: rgb(255, 255, 255);
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.528);
   color: #19ba4c;
@@ -37,11 +37,11 @@
   padding: 0;
 }
 .plan-features li {
-  margin: 5px 0px;
+  margin: 0.3rem 0px;
 }
 .card-button {
-  margin-top: 5px;
-  padding: 8px;
+  margin-top: 0.3rem;
+  padding: 0.5rem;
   background-color: #0e4f1f;
   border-radius: 5px;
   font: inherit;
