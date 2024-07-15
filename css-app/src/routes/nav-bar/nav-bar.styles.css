@@ -12,6 +12,11 @@
   color: #0e4f1f;
   font-weight: bold;
   font-size: 22px;
+  display: inline-block;
+  height: 24px;
+}
+.main-header__brand img {
+  height: 100%;
 }
 
 .main-nav__item {

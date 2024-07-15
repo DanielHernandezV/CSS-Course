@@ -1,13 +1,15 @@
 import "./nav-bar.styles.css";
 import { Outlet, Link } from "react-router-dom";
+
 import Footer from "../../component/footer/footer.component";
+
 const NavBar = () => {
   return (
     <>
       <header className="main-header">
         <div>
           <Link to="/" className="main-header__brand">
-            uHost
+            <img src="/temp-img/uhost-icon.png" alt="Uhost" />
           </Link>
         </div>
         <nav className="main-nav">
@@ -16,7 +18,7 @@ const NavBar = () => {
               <Link to="/packages">Packages</Link>
             </li>
             <li className="main-nav__item">
-              <a href="customer/index/html">Customers</a>
+              <Link to="/customers">Customers</Link>
             </li>
             <li className="main-nav__item main-nav__item--cta">
               <a href="start-hosting/index.html">Start Hosting</a>
