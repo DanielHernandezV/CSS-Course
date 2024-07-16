@@ -12,7 +12,10 @@ const NavBar = () => {
     <>
       <header className="main-header">
         <div>
-          <HamburguerButton togleFunction={setMovileNav} />
+          <HamburguerButton
+            togleFunction={setMovileNav}
+            className="hamburguer-ico"
+          />
           <Link to="/" className="main-header__brand">
             <img src="/temp-img/uhost-icon.png" alt="Uhost" />
           </Link>

@@ -1,12 +1,24 @@
 .plan {
-  display: inline-block;
   padding: 1rem;
   background: rgb(172, 229, 172);
   text-align: center;
-  margin: 0.5rem;
-  width: 350px;
-  vertical-align: middle;
+  width: 100%;
+  margin: 0.2rem 0;
 }
+
+@media (min-width: 40rem) {
+  .plan {
+    display: inline-block;
+    width: 30%;
+    max-width: 24rem;
+    margin: 0.5rem;
+    vertical-align: middle;
+  }
+  .plan-highlighted {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.484);
+  }
+}
+
 .plan-title {
   color: #0e4f1f;
 }
@@ -29,7 +41,6 @@
 .plan-highlighted {
   background-color: #19ba4c;
   color: white;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.484);
 }
 .plan-features {
   list-style: none;

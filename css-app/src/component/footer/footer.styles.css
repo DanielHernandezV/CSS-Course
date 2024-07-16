@@ -4,13 +4,12 @@
 }
 .footer-list {
   list-style: none;
-  text-align: right;
   margin-right: 1.9rem;
 }
 .footer-feature {
-  display: inline-block;
-  margin: 0px 1rem;
+  margin: 1rem auto;
   color: white;
+  max-width: 8rem;
 }
 
 .footer-feature > a {
@@ -20,4 +19,13 @@
 .footer-feature > a:hover,
 .footer-feature > a:active {
   color: antiquewhite;
+}
+@media (min-width: 40rem) {
+  .footer-feature {
+    display: inline-block;
+    margin: 0px 1rem;
+  }
+  .footer-list {
+    text-align: right;
+  }
 }

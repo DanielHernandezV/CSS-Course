@@ -19,3 +19,8 @@
   display: block;
   margin: 0.6rem 0;
 }
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+}

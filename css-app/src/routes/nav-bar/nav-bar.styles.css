@@ -12,13 +12,15 @@
   color: #0e4f1f;
   font-weight: bold;
   font-size: 1.3rem;
-  display: inline-block;
-  height: 24px;
+  display: none;
+  height: 1.5rem;
+  width: 2rem;
   vertical-align: middle;
   margin-left: 20px;
 }
 .main-header__brand img {
   height: 100%;
+  width: 100%;
 }
 
 .main-nav__item {
@@ -55,7 +57,7 @@
   vertical-align: middle;
 }
 .main-nav {
-  display: inline-block;
+  display: none;
   text-align: right;
   width: calc(100% - 95px);
   vertical-align: middle;
@@ -76,4 +78,13 @@
   color: red;
   background: white;
   border: none;
+}
+
+@media (min-width: 40rem) {
+  .main-header__brand {
+    display: inline-block;
+  }
+  .main-nav {
+    display: inline-block;
+  }
 }

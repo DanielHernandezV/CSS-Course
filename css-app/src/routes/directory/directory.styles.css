@@ -1,6 +1,6 @@
 #product-overview {
   background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-    url(../../assets/freedom.jpg) left 10% bottom 80% / cover no-repeat
+    url(../../assets/freedom.jpg) left 10% bottom 70% / cover no-repeat
       border-box;
   /*   background-size: cover;
   background-position: left 10% top 30%;
@@ -16,16 +16,26 @@
   color: #2ddf5c;
   text-align: center;
 }
+
 #product-overview h1 {
   color: white;
   font-family: "Anton", sans-serif;
   position: absolute;
   bottom: 10%;
   left: 2%;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
-.card-container {
-  width: 80%;
-  margin: auto;
-  text-align: center;
+
+@media (min-width: 40rem) {
+  #product-overview {
+    height: 40vh;
+    background-position: 50% 20%;
+  }
+  #product-overview h1 {
+    font-size: 3rem;
+  }
+  .card-container {
+    width: 100%;
+    text-align: center;
+  }
 }
