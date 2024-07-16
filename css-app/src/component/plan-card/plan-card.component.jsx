@@ -1,8 +1,10 @@
 import "./plan-card.styles.css";
 
-const PlanCard = ({ card }) => {
+const PlanCard = ({ card, togleModal }) => {
   const { type, price, description, details, recomended } = card;
-
+  const togleTheModal = () => {
+    togleModal();
+  };
   return (
     <article className={`plan ${recomended ? `plan-highlighted` : ""}`}>
       {recomended && <h1 className="plan-anotation">RECOMENDED</h1>}
@@ -15,7 +17,9 @@ const PlanCard = ({ card }) => {
         ))}
       </ul>
       <div>
-        <button className="card-button">CHOOSE PLAN</button>
+        <button className="card-button" onClick={togleTheModal}>
+          CHOOSE PLAN
+        </button>
       </div>
     </article>
   );
