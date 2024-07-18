@@ -1,5 +1,5 @@
 import "./plan-card.styles.css";
-
+import Button from "../button/button.component";
 const PlanCard = ({ card, togleModal }) => {
   const { type, price, description, details, recomended } = card;
   const togleTheModal = () => {
@@ -17,9 +17,9 @@ const PlanCard = ({ card, togleModal }) => {
         ))}
       </ul>
       <div>
-        <button className="card-button" onClick={togleTheModal}>
+        <Button buttonType="b-base" onClick={togleTheModal}>
           CHOOSE PLAN
-        </button>
+        </Button>
       </div>
     </article>
   );

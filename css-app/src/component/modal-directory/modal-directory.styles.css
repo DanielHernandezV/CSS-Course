@@ -13,13 +13,14 @@
   background-color: rgb(255, 255, 255);
   width: 40%;
   top: 20%;
-  left: 30%;
+  left: 50vw;
   border-radius: 12px;
   padding: 1rem;
-
+  transform: translateX(-50%);
   z-index: 200;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px rgba(53, 53, 53, 0.5);
+  max-width: 27rem;
 }
 .modal__title {
   text-align: center;
@@ -43,6 +44,10 @@
 .modal__action:active {
   background: #2ddf5c;
   border-color: #2ddf5c;
+}
+
+.modal__action--negative {
+  background: red;
 }
 .modal__action--negative:hover,
 .modal__action--negative:active {

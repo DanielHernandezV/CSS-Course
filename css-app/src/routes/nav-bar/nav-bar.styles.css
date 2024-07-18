@@ -1,22 +1,28 @@
+main {
+  min-height: calc(100vh - 3rem - 3.5rem);
+  margin-top: 3.5rem;
+}
 .main-header {
   width: 100%;
   background: #2ddf5c;
   padding: 0.6rem 1rem;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 1;
+  vertical-align: middle;
 }
 
 .main-header__brand {
   text-decoration: none;
   color: #0e4f1f;
   font-weight: bold;
-  font-size: 1.3rem;
   display: none;
-  height: 1.5rem;
-  width: 2rem;
+
+  width: 100%;
   vertical-align: middle;
-  margin-left: 20px;
+  margin-left: 0.5rem;
+  height: 3rem;
 }
 .main-header__brand img {
   height: 100%;
@@ -66,12 +72,15 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  vertical-align: middle;
 }
 .main-nav__item--cta a {
   color: white;
   background-color: red;
   padding: 0.5rem, 1rem;
   border-radius: 8px;
+  vertical-align: middle;
+  cursor: pointer;
 }
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active {

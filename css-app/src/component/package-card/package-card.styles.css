@@ -28,7 +28,7 @@
 }
 .package-card-description {
   background: rgba(255, 255, 255, 0.95);
-  border: solid #0e4f1f 1px;
+  border: solid #0e4f1f 2px;
   padding: 1rem;
   font-size: 1.2rem;
 }
@@ -68,4 +68,13 @@
 }
 .separator {
   clear: both;
+}
+@media (min-width: 94rem) {
+  .package-card-container {
+    border: solid #0e4f1f 2px;
+  }
+  .package-card-container:hover,
+  .package-card-container:active {
+    border: solid rgb(254, 0, 0) 2px;
+  }
 }

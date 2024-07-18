@@ -50,20 +50,19 @@ const Directory = () => {
   return (
     <>
       <ModalDirectory active={modalState} modalTogle={togleModal} />
-      <main>
-        <section id="product-overview">
-          <h1>Get the freedom you deserve.</h1>
-        </section>
-        <section id="plans">
-          <h1 className="section-title">Choose Your Plan</h1>
-          <div className="card-container">
-            {cards.map((card) => (
-              <PlanCard key={card.type} card={card} togleModal={togleModal} />
-            ))}
-          </div>
-        </section>
-        <KeyFeatures />
-      </main>
+
+      <section id="product-overview">
+        <h1>Get the freedom you deserve.</h1>
+      </section>
+      <section id="plans">
+        <h1 className="section-title">Choose Your Plan</h1>
+        <div className="card-container">
+          {cards.map((card) => (
+            <PlanCard key={card.type} card={card} togleModal={togleModal} />
+          ))}
+        </div>
+      </section>
+      <KeyFeatures />
     </>
   );
 };

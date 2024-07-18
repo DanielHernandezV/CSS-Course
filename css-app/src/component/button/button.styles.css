@@ -1,0 +1,25 @@
+.b-base {
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  background-color: #0e4f1f;
+  border-radius: 5px;
+  font: inherit;
+  color: white;
+  border: 2px solid #0e4f1f;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.484);
+  font-weight: bold;
+  cursor: pointer;
+}
+.b-base:hover,
+.b-base:active {
+  background-color: white;
+  color: #0e4f1f;
+}
+button[disabled],
+button[disabled]:hover,
+button[disabled]:active {
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: gray;
+  border: 0;
+}

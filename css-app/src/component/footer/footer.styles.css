@@ -1,6 +1,7 @@
 .main-footer {
   background: rgb(13, 40, 13);
   padding: 0.2rem;
+  margin-top: 1rem;
 }
 .footer-list {
   list-style: none;
