@@ -16,7 +16,7 @@ const PlanCard = ({ card, togleModal }) => {
           <li key={element}>{element}</li>
         ))}
       </ul>
-      <div>
+      <div className="card-button-container">
         <Button buttonType="b-base" onClick={togleTheModal}>
           CHOOSE PLAN
         </Button>

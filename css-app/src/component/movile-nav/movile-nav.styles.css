@@ -1,7 +1,7 @@
 .movile-nav-backdrop {
   position: fixed;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   background-color: rgba(109, 107, 107, 0.635);
   z-index: 100;
   top: 0;
@@ -21,9 +21,12 @@
   width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
+  margin: 0 auto;
   padding: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .mobile-nav__item {

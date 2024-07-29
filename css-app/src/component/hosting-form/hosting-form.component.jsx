@@ -21,7 +21,7 @@ const HostingForm = () => {
         <input type="checkbox" id="agree-terms" />
         <label htmlFor="agree-terms">
           Agree to
-          <a href="#">Terms &amp; Conditions</a>
+          <a href="#"> Terms &amp; Conditions</a>
         </label>
         <Button buttonType="b-base" type="submit" disabled>
           Sign Up

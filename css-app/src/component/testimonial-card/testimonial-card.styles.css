@@ -1,3 +1,4 @@
+/* font-variant: small-caps capitalize  */
 .testimonial {
   font-size: 1.2rem;
 }
@@ -65,17 +66,18 @@
 }
 @media (min-width: 40rem) {
   .testimonial__image-container {
-    display: inline-block;
     width: 65%;
     max-width: 580px;
     min-width: 350px;
   }
   .testimonial__info {
-    display: inline-block;
     width: 30%;
   }
   .testimonial {
     margin: 3rem auto;
     max-width: 94rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 }

@@ -38,6 +38,9 @@
 @media (min-width: 40rem) {
   .card-container {
     width: 100%;
-    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

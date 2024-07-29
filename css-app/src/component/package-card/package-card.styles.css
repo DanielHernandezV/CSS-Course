@@ -31,11 +31,13 @@
   border: solid #0e4f1f 2px;
   padding: 1rem;
   font-size: 1.2rem;
+  /* font-style font-variant font-weight font-size font-family */
 }
 
 .package-card-title {
   color: black;
-  font-weight: bold;
+  font-weight: 800;
+  text-shadow: 2px 2px 7px gray;
 }
 .package-card-subtitle {
   color: gray;
@@ -58,6 +60,7 @@
 }
 .premium .package-card-title {
   color: rgba(255, 255, 255, 0.95);
+  text-shadow: 2px 2px 7px rgb(19, 19, 19);
 }
 .free {
   background: hsla(120, 61%, 88%, 0.95);

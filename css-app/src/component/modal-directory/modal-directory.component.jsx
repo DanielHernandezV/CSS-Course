@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./modal-directory.styles.css";
-import { useEffect } from "react";
+import Button from "../button/button.component";
 
 const ModalDirectory = ({ active, modalTogle, direction }) => {
   if (!active) return null;
@@ -13,13 +13,13 @@ const ModalDirectory = ({ active, modalTogle, direction }) => {
           <Link to={direction} onClick={modalTogle} className="modal__action">
             Yes!
           </Link>
-          <button
+          <Button
             className="modal__action modal__action--negative"
             type="button"
             onClick={modalTogle}
           >
             No!
-          </button>
+          </Button>
         </div>
       </div>
     </div>

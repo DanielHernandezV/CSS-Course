@@ -1,9 +1,52 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
 }
+
+/* Another usefull font props:
+font-variant: small-caps; capitalize
+letter-spacing: 10px; for letter spacing
+line-height: 2; line height, calculated based on the font size , in this case font size x2 
+text-decoration: underline, overline, line-through (doted, wavy, colors)
+text-shadow: 2px 2px 7px gray; (x,y,blur, color)
+
+  font: italic 700 1.2rem/2 "Roboto", sans-serif; (font-style font-variant font-weight font-size/line-height font-family )
+ 
+
+  font display:
+
+
+*/
+
+/* 
+
+justify-content: main
+align-items: cross
+
+align-content: ;
+*/
