@@ -44,9 +44,107 @@ text-shadow: 2px 2px 7px gray; (x,y,blur, color)
 */
 
 /* 
+Flex box:
+display: flex
+
+/ props
+
+ Positional alignment 
+justify-content: center;
+justify-content: start;
+justify-content: end;
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: left;
+justify-content: right;
+
 
 justify-content: main
-align-items: cross
+
+examples of props
+justify-content: space-between;
+justify-content: space-around;
+justify-content: space-evenly;
+justify-content: stretch;
+
+align-items: cross 
+
+exampe of props
+align-items: baseline;
+align-items: first baseline;
+align-items: last baseline;  Overflow alignment (for positional alignment only) 
+align-items: safe center;
+align-items: unsafe center;
+
+
 
 align-content: ;
+
+self align - Align the children
+
+
+flex grow
+flex shrink
+*/
+
+/* 
+
+
+grid
+
+initialize:
+display: grid;
+grid-template-columns: (example repeat(4, 25%))
+grid-template-rows: (example 5rem minmax(10px, 200px))
+
+
+//
+span : span colums or rows
+
+example:
+.container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 15rem); can be auto-fill or auto-fit // 
+    justify-content: center;
+    grid-gap: 1.5rem;
+    grid-auto-rows: minmax(8rem, auto);
+    grid-auto-flow: row (dense = fill in holes earlier in the grid, if smaller items come up later);
+    grid-auto-columns: 5rem;
+}
+    
+  grid-column-start: 3; 
+  grid-column-end: span 2;
+
+  short-hand : grid-column: start / end, and is the same for the grid-row
+
+  grid-row-start: 1;
+  grid-row-end: span 2;
+
+  short-hand grid-area: row-start / column-start / row-end / column-end
+
+  grid-colum-end : -1 / all the grid
+
+  columns and rows can overlap
+  z-index works
+
+  gap: row-gap column-gap
+
+
+    grid-template-areas:
+    "header header header header"
+    "side main main main"
+    "footer footer footer footer";
+
+
+    another grid-props:
+    the container
+    justify-items: (center,start,end, stretch(default))// position the elements in the grid areas, horizontal
+    align-items: (center,start,end, stretch(default)) // position the elements in the grid areas, vertical
+    justify-content
+    align-content 
+
+    child
+    justify-self 
+    align-self
 */

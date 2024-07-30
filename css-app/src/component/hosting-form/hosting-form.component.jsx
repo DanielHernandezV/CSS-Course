@@ -18,11 +18,14 @@ const HostingForm = () => {
         <input type="email" id="email" />
         <label htmlFor="password">Password</label>
         <input type="password" id="password" />
-        <input type="checkbox" id="agree-terms" />
-        <label htmlFor="agree-terms">
-          Agree to
-          <a href="#"> Terms &amp; Conditions</a>
-        </label>
+        <div className="sign-up-form-checkbox-container">
+          <input type="checkbox" id="agree-terms" />
+          <label htmlFor="agree-terms">
+            Agree to
+            <a href="#"> Terms &amp; Conditions</a>
+          </label>
+        </div>
+
         <Button buttonType="b-base" type="submit" disabled>
           Sign Up
         </Button>

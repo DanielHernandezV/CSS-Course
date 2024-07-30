@@ -1,7 +1,10 @@
 .main-footer {
   background: rgb(13, 40, 13);
   padding: 0.2rem;
-  margin-top: 1rem;
+  grid-row: 3 / 4;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 .footer-list {
   margin: 1rem 0;
@@ -29,9 +32,15 @@
   .footer-feature {
     margin: 0px 1rem;
   }
+
   .footer-list {
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 1rem;
+  }
+  .main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 }
