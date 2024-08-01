@@ -6,6 +6,6 @@ body::-webkit-scrollbar {
 }
 #root {
   display: grid;
-  grid-template-rows: [header]4.4748125rem [body]auto fit-content(5rem);
+  grid-template-rows: [header]4.3rem [body]auto fit-content(5rem);
   height: 100vh;
 }
