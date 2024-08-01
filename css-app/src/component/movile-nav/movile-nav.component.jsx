@@ -18,7 +18,7 @@ const MovileNav = ({ active, toggle }) => {
             <Link to="/customers">Customers</Link>
           </li>
           <li className="mobile-nav__item mobile-nav__item--cta">
-            <Link to="/customers">Customers</Link>
+            <Link to="/hosting">Start Hosting</Link>
           </li>
         </ul>
       </nav>
