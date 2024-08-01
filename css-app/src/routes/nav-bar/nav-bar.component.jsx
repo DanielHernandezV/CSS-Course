@@ -3,25 +3,13 @@ import { Outlet, Link } from "react-router-dom";
 import MovileNav from "../../component/movile-nav/movile-nav.component";
 import Footer from "../../component/footer/footer.component";
 import HamburguerButton from "../../component/hamburguer-button/hamburguer-button.component";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ModalDirectory from "../../component/modal-directory/modal-directory.component";
 const NavBar = () => {
   const [togleHam, setTogleHam] = useState(false);
   const [toggleModal, setToggleModal] = useState(false);
-  const [displayModal, setDisplayModal] = useState(false);
-
-  const toggleModalHandler = () => {
-    setDisplayModal(!displayModal);
-    setTimeout(() => {
-      setToggleModal(!toggleModal);
-    }, 0.5);
-  };
-  const closeModalHandler = () => {
+  const togleTheModalHandler = () => {
     setToggleModal(!toggleModal);
-
-    setTimeout(() => {
-      setDisplayModal(!displayModal);
-    }, 400);
   };
   const setMovileNav = () => setTogleHam(!togleHam);
 
@@ -43,7 +31,7 @@ const NavBar = () => {
               <Link to="/customers">Customers</Link>
             </li>
             <li className="main-nav__item main-nav__item--cta">
-              <a onClick={toggleModalHandler}>Start Hosting</a>
+              <a onClick={togleTheModalHandler}>Start Hosting</a>
             </li>
           </ul>
         </nav>
@@ -52,8 +40,7 @@ const NavBar = () => {
       <main>
         <ModalDirectory
           active={toggleModal}
-          modalTogle={closeModalHandler}
-          display={displayModal}
+          modalTogle={togleTheModalHandler}
           direction="/hosting"
         />
         <Outlet />

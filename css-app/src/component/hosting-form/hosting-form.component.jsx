@@ -25,10 +25,11 @@ const HostingForm = () => {
             <a href="#"> Terms &amp; Conditions</a>
           </label>
         </div>
-
-        <Button buttonType="b-base" type="submit" disabled>
-          Sign Up
-        </Button>
+        <div className="hosting-form-button-container">
+          <Button buttonType="b-base" type="submit" disabled>
+            Sign Up
+          </Button>
+        </div>
       </form>
     </div>
   );

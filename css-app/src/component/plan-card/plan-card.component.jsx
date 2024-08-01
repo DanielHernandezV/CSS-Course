@@ -13,7 +13,7 @@ const PlanCard = ({ card, togleModal }) => {
       <ModalDirectory
         active={toggleModal}
         modalTogle={togleTheModalHandler}
-        direction={`./dummyDirecction/ ${type}`}
+        direction={`./dummyDirecction/${type}`}
       />
       <article className={`plan ${recomended ? `plan-highlighted` : ""}`}>
         {recomended && <h1 className="plan-anotation">RECOMENDED</h1>}

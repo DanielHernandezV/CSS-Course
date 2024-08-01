@@ -57,9 +57,7 @@
   background: #2ddf5c;
   border: #0e4f1f;
 }
-.signup-form button[type="submit"] {
-  justify-self: center;
-}
+
 .signup-form :invalid {
   background: rgb(242, 165, 165);
   border-color: red !important;
@@ -81,7 +79,9 @@
   .signup-form select {
     grid-column: span 2;
   }
-  .signup-form button[type="submit"] {
+
+  .hosting-form-button-container {
+    justify-self: center;
     grid-column: span 2;
   }
 }
