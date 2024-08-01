@@ -1,11 +1,15 @@
 import "./movile-nav.styles.css";
 import { Link } from "react-router-dom";
 const MovileNav = ({ active, toggle }) => {
-  if (!active) return null;
   return (
     <>
-      <div className="movile-nav-backdrop" onClick={toggle}></div>
-      <nav className="mobile-nav">
+      <div
+        className={`mobile-nav-backdrop  ${
+          active ? "mobile-nav-backdrop-active" : ""
+        } `}
+        onClick={toggle}
+      />
+      <nav className={`mobile-nav  ${active ? "mobile-nav-active" : ""} `}>
         <ul className="mobile-nav__items">
           <li className="mobile-nav__item">
             <Link to="/packages">Packages</Link>

@@ -42,15 +42,8 @@ const cards = [
   },
 ];
 const Directory = () => {
-  const [modalState, setModalState] = useState(false);
-
-  const togleModal = () => {
-    setModalState(!modalState);
-  };
   return (
     <>
-      <ModalDirectory active={modalState} modalTogle={togleModal} />
-
       <section id="product-overview">
         <h1>Get the freedom you deserve.</h1>
       </section>
@@ -58,7 +51,7 @@ const Directory = () => {
         <h1 className="section-title">Choose Your Plan</h1>
         <div className="card-container">
           {cards.map((card) => (
-            <PlanCard key={card.type} card={card} togleModal={togleModal} />
+            <PlanCard key={card.type} card={card} />
           ))}
         </div>
       </section>

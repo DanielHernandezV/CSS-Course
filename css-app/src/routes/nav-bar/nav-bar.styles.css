@@ -72,6 +72,9 @@ main {
   vertical-align: middle;
   display: flex;
 }
+.main-nav__item--cta {
+  animation: wiggle 400ms 3s 8 none;
+}
 .main-nav__item--cta a {
   color: white;
   background-color: red;
@@ -80,6 +83,19 @@ main {
   vertical-align: middle;
   cursor: pointer;
 }
+
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(10deg);
+  }
+}
+
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active {
   color: red;

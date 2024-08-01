@@ -29,6 +29,7 @@ body {
 }
 
 /* Another usefull font props:
+
 font-variant: small-caps; capitalize
 letter-spacing: 10px; for letter spacing
 line-height: 2; line height, calculated based on the font size , in this case font size x2 
@@ -46,8 +47,18 @@ text-shadow: 2px 2px 7px gray; (x,y,blur, color)
 /* 
 Flex box:
 display: flex
+flex-direction: (row | row-reverse | column | column-reverse )
+flex-wrap: (nowrap = default, wrap)
 
+flex-flow : (short-hand ) flex-direction flex-wrap
+flex-grow specifies how much of the flex
+ container's positive free space, if any, should be assigned to the flex item's
+
+flex-shrink
 / props
+
+child
+  align-self - Align the children
 
  Positional alignment 
 justify-content: center;
@@ -57,7 +68,6 @@ justify-content: flex-start;
 justify-content: flex-end;
 justify-content: left;
 justify-content: right;
-
 
 justify-content: main
 
@@ -77,10 +87,9 @@ align-items: safe center;
 align-items: unsafe center;
 
 
-
 align-content: ;
 
-self align - Align the children
+
 
 
 flex grow
@@ -97,9 +106,29 @@ display: grid;
 grid-template-columns: (example repeat(4, 25%))
 grid-template-rows: (example 5rem minmax(10px, 200px))
 
+grid-auto-flow
 
+  grid-auto-rows
+  grid-auto-colun
+
+
+childs
+  justify-self: 
+  align-self
+  
 //
 span : span colums or rows
+  column-span
+  row-span
+
+columns and rows can overlap
+  z-index works
+
+the container
+  justify-items: (center,start,end, stretch(default))// position the elements in the grid areas, horizontal
+  align-items: (center,start,end, stretch(default)) // position the elements in the grid areas, vertical
+  justify-content
+  align-content 
 
 example:
 .container {
@@ -125,8 +154,7 @@ example:
 
   grid-colum-end : -1 / all the grid
 
-  columns and rows can overlap
-  z-index works
+
 
   gap: row-gap column-gap
 
@@ -137,14 +165,51 @@ example:
     "footer footer footer footer";
 
 
-    another grid-props:
-    the container
-    justify-items: (center,start,end, stretch(default))// position the elements in the grid areas, horizontal
-    align-items: (center,start,end, stretch(default)) // position the elements in the grid areas, vertical
-    justify-content
-    align-content 
 
-    child
-    justify-self 
-    align-self
+
+
 */
+
+/* transform and rotate:
+
+  transform:
+
+    rotateZ,X and Y:
+
+      transform: rotateZ(45deg) // rotate the elemente 45 deg clockwise direction, default origin =  center
+
+    transform-origin: (X) (Y)  // change the origin of the transformation
+    
+    translate:
+      transform: translateX(1rem) translateY(1rem) // translate the elemente through the X and Y
+      short-hand: translate : (x,y) 
+    scale: 
+      scale the container (x,y), if you put just one, then both, unit = deg
+    skew:
+      skew the image (x,y), if you put just one, then both unit = deg
+
+
+
+transition: (type of transition ex= opacity time of transition ex=0.3s type of transition ex fast and then slow = ease-out), transform 500ms ease-out;
+  can add a duration before start ex = transition: opacity 200ms 1s ease-out;
+
+
+animations:
+
+  animation: NAME DURATION DELAY TIMING-FUNCTION ITERATION DIRECTION FILL-MODE PLAY-STATE; 
+
+  Example:
+    animation: wiggle 200ms 1s ease-out 8 alternate forwards running;
+
+    @keyframes wiggle {
+     from {
+        transform: rotateZ(0);
+      }
+    to {
+      transform: rotateZ(10deg);
+    }
+}
+useful prop:
+  overflow: hidden
+
+ */

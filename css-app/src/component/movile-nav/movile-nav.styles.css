@@ -1,20 +1,30 @@
-.movile-nav-backdrop {
+.mobile-nav-backdrop {
   position: fixed;
   width: 100vw;
   height: 100vh;
   background-color: rgba(109, 107, 107, 0.635);
-  z-index: 100;
+  z-index: -100;
   top: 0;
   left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+.mobile-nav-backdrop-active {
+  z-index: 100;
+  opacity: 1;
 }
 .mobile-nav {
   position: fixed;
   z-index: 101;
   top: 0;
-  left: 0;
+  left: -80%;
   background: white;
   width: 80%;
   height: 100vh;
+  transition: transform 0.3s ease-out;
+}
+.mobile-nav-active {
+  transform: translateX(100%);
 }
 
 .mobile-nav__items {

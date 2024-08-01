@@ -3,10 +3,11 @@ import "./modal-directory.styles.css";
 import Button from "../button/button.component";
 
 const ModalDirectory = ({ active, modalTogle, direction }) => {
-  if (!active) return null;
+  if (!active) return;
 
   return (
-    <div className="backdrop">
+    <>
+      <div className="backdrop" />
       <div className="modal">
         <h1 className="modal__title">Do you want to continue?</h1>
         <div className="modal__actions">
@@ -22,7 +23,7 @@ const ModalDirectory = ({ active, modalTogle, direction }) => {
           </Button>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 export default ModalDirectory;
