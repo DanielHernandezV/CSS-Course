@@ -5,7 +5,7 @@ const Footer = () => {
       <nav className="footer-nav">
         <ul className="footer-list">
           <li className="footer-feature">
-            <a href="#">Support</a>
+            <a href="#">Auth: Daniel Hernandez Vargas</a>
           </li>
           <li className="footer-feature">
             <a href="#">Terms of Use</a>
