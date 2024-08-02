@@ -2,7 +2,7 @@ import "./plan-card.styles.css";
 import Button from "../button/button.component";
 import ModalDirectory from "../modal-directory/modal-directory.component";
 import { useState } from "react";
-const PlanCard = ({ card, togleModal }) => {
+const PlanCard = ({ card }) => {
   const { type, price, description, details, recomended } = card;
   const [toggleModal, setToggleModal] = useState(false);
   const togleTheModalHandler = () => {

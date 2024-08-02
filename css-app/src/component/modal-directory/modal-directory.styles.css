@@ -26,13 +26,39 @@
   animation: modal 0.3s ease-out forwards;
   transform: translateX(-50%) translateY(-5rem);
 }
+.backdrop-closing {
+  animation: backdrop-close 0.3s ease-out forwards;
+}
+.modal-closing {
+  animation: modal-close 0.3s ease-out forwards;
+}
 
-@keyframes modal {
-  from {
+@keyframes modal-close {
+  0% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  100% {
     transform: translateX(-50%) translateY(-5rem);
     opacity: 0;
   }
+}
+
+@keyframes backdrop-close {
+  from {
+    opacity: 1;
+  }
   to {
+    opacity: 0;
+  }
+}
+
+@keyframes modal {
+  0% {
+    transform: translateX(-50%) translateY(-5rem);
+    opacity: 0;
+  }
+  100% {
     transform: translateX(-50%) translateY(0);
     opacity: 1;
   }
